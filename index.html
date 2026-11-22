@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jugantor Dey</title>
-<meta name="description" content="Jugantor Dey, physics student from Dhaka, Bangladesh. Honorable Mention at the Asian Physics Olympiad 2025. Author of Mathematics for the Physics Olympiad, a free 22-chapter Bangla handout series.">
+<meta name="description" content="Jugantor Dey is a physics student from Dhaka, Bangladesh, a two-time Asian Physics Olympiad contestant, and the author of free Bangla math handouts for physics olympiad preparation.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=Source+Serif+4:wght@400;600&family=Noto+Sans+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400..700;1,400&family=Noto+Sans+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#121826">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")==="light"?"light":"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
 <link rel="stylesheet" href="style.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="651d6be3-6963-49e7-a22d-0ef7555b28bb"></script>
 </head>
@@ -20,199 +22,120 @@
   <div class="wrap">
     <a class="brand" href="./">Jugantor Dey</a>
     <nav aria-label="Main">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#honors">Honors</a>
-      <a href="#contact">Contact</a>
+      <a href="./" aria-current="page">Home</a>
+      <a href="writings.html">Writings</a>
+      <a href="experience.html">Experience</a>
+      <a href="beyond.html">Beyond physics</a>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Physics &middot; Dhaka, Bangladesh</p>
-      <h1>Jugantor Dey</h1>
-      <p class="lead">I study physics and compete in physics olympiads. I was on Bangladesh's team at the Asian Physics Olympiad in 2025 and 2026. I also write free mathematics handouts in Bangla for students preparing for physics olympiads.</p>
+      <h1><span>Jugantor</span><span>Dey</span></h1>
+      <p class="identity">Physics, writing, teaching, design.<span>Based in Dhaka, Bangladesh.</span></p>
+      <p class="lead">I am a physics student from Dhaka. I have competed at the Asian Physics Olympiad twice, in 2025 and 2026, and I write free math handouts in Bangla for students preparing for physics olympiads.</p>
       <div class="btn-row">
         <a class="btn" href="handouts.html">Read the handouts</a>
         <a class="btn ghost" href="#contact">Get in touch</a>
       </div>
     </div>
-    <img class="portrait" src="jugantor_dey.png" alt="Portrait of Jugantor Dey" width="648" height="648">
+    <figure class="top-figure">
+      <canvas id="top" role="img" aria-label="A spinning top. Its axis circles the vertical while the disc spins, and the tip leaves a fading trail."></canvas>
+    </figure>
   </div>
 </section>
 
 <main>
 
-<!-- ======================================================================
-     WORK
-     ====================================================================== -->
 <section class="block" id="work">
   <div class="wrap">
     <div class="sec-head">
       <h2>Selected work</h2>
+      <p>The projects that have taken most of my time.</p>
     </div>
-
-    <div class="cards">
-
-      <article class="card featured">
-        <p class="tag">Handout series &middot; Bangla &middot; Free</p>
-        <h3>Mathematics for the Physics Olympiad</h3>
-        <p>A 22-chapter series that takes a Bangla-medium student from class-5 arithmetic to vector calculus. It covers the calculus the physics olympiad needs and nothing more. The only prerequisites are arithmetic, LCM and GCD, fractions and decimals. Every chapter has a student edition and an edition with worked solutions.</p>
-        <div class="stats">
-          <div><b>22</b><span>chapters</span></div>
-          <div><b>2</b><span>editions of each</span></div>
-          <div><b>Free</b><span>to download and share</span></div>
-        </div>
-        <div class="btn-row">
-          <a class="btn" href="handouts.html">Open the series</a>
-        </div>
-      </article>
-
-      <article class="card">
+<article class="panel">
+      <p class="tag">Handout series &middot; Bangla &middot; Free</p>
+      <h3>Mathematics for the Physics Olympiad</h3>
+      <p>22 chapters in Bangla, from class-5 arithmetic to vector calculus. Every chapter has a student edition and an edition with a worked solution to every problem.</p>
+      <div class="stats">
+        <div><b>22</b><span>chapters</span></div>
+        <div><b>2</b><span>editions of each</span></div>
+        <div><b>Free</b><span>to download and share</span></div>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="handouts.html">Open the handouts</a>
+      </div>
+    </article>
+    <ul class="work-list">
+      <li>
         <p class="tag">Book series &middot; Co-editor</p>
-        <h3>The Set</h3>
-        <p>A Bangla math olympiad series from the Notre Dame Math Club, with about 90 articles by 30+ authors across five volumes. Volume I (20 articles, 280 pages) came out in March 2026 and sold 190 copies with no paid ads. I am one of four student editors. I translated the English articles into Bangla and wrote the editorials.</p>
-        <a class="more" target="_blank" rel="noopener" href="https://www.rokomari.com/book/545183/the-set-1st-volume-proof-technique-and-combinatorics">Volume I on Rokomari &rarr;</a>
-      </article>
-
-      <article class="card">
+        <div>
+          <h3>The Set</h3>
+          <p>A Bangla math olympiad series from the Notre Dame Math Club. Volume I came out in March 2026 and sold 190 copies without paid ads. I am one of four student editors.</p>
+        </div>
+        <a class="more" href="writings.html#books">About the book</a>
+      </li>
+      <li>
         <p class="tag">Non-profit &middot; Co-founder</p>
-        <h3>PHASOR</h3>
-        <p>A non-profit physics learning site. I co-founded it in March 2026.</p>
-        <a class="more" target="_blank" rel="noopener" href="https://www.phasor.site/">phasor.site &rarr;</a>
-      </article>
-
-      <article class="card">
+        <div>
+          <h3>PHASOR</h3>
+          <p>A free platform for learning physics on your own, built with CM Rafat Hasnain. I lead its creative direction and media.</p>
+        </div>
+        <a class="more" target="_blank" rel="noopener" href="https://www.phasor.site/">phasor.site</a>
+      </li>
+      <li>
         <p class="tag">Video series &middot; Instructor</p>
-        <h3>Mastery Bootcamp for BdPhO '26</h3>
-        <p>I taught the mechanics sessions of this bootcamp for the Bangladesh Physics Olympiad 2026.</p>
-        <a class="more" target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLRbn9T3-iUpKvylpkDXzlHiJzjLWLhJUD">Watch the playlist &rarr;</a>
-      </article>
-
-      <article class="card">
-        <p class="tag">Articles &middot; Notre Dame Math Club</p>
-        <h3>ATLED and The Scaling Problem</h3>
-        <p>I wrote two articles for the Notre Dame Math Club: &ldquo;ATLED: The Vector Differential Operator&rdquo; and &ldquo;The Scaling Problem&rdquo;.</p>
-        <a class="more" target="_blank" rel="noopener" href="https://ndmcbd.org/resources?item=atled">Read ATLED &rarr;</a>
-      </article>
-
-    </div>
+        <div>
+          <h3>Mastery Bootcamp for BdPhO '26</h3>
+          <p>I taught 5 of the 17 mechanics classes for about 450 students. All the classes are on YouTube.</p>
+        </div>
+        <a class="more" target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLRbn9T3-iUpKvylpkDXzlHiJzjLWLhJUD">Watch the playlist</a>
+      </li>
+    </ul>
+    <p class="more-link"><a href="writings.html">All my writings</a></p>
   </div>
 </section>
 
-<!-- ======================================================================
-     ABOUT
-     ====================================================================== -->
 <section class="block" id="about">
   <div class="wrap">
     <div class="sec-head">
       <h2>About</h2>
+      <p>Where I come from and what I am working on.</p>
     </div>
-    <div class="about">
+<div class="about">
       <div>
-        <p>I went to <a target="_blank" rel="noopener" href="https://www.iscm.edu.bd/">Ideal School and College</a> in Dhaka until the Secondary School Certificate (SSC) examination. Then I went to <a target="_blank" rel="noopener" href="https://ndc.edu.bd/">Notre Dame College</a>, where I sat the Higher Secondary Certificate (HSC) examination in 2026.</p>
-        <p>I was on Bangladesh's team at the <a target="_blank" rel="noopener" href="https://www.apho2025.sa/">Asian Physics Olympiad 2025</a> in Dhahran, Saudi Arabia, and earned an Honorable Mention. I was on the team again at the <a target="_blank" rel="noopener" href="https://apho2026.kr/">Asian Physics Olympiad 2026</a> in Busan, South Korea.</p>
-        <p>I was Executive of Academics at the <a target="_blank" rel="noopener" href="https://ndmcbd.org/">Notre Dame Math Club</a> (2025&ndash;26) and co-edited <a target="_blank" rel="noopener" href="https://www.rokomari.com/book/545183/the-set-1st-volume-proof-technique-and-combinatorics"><i>The Set</i></a>, a series of olympiad mathematics articles written by club members. Only Volume I has been published so far.</p>
+        <p>I am from Dhaka. I went to Ideal School and College in Motijheel, then to Notre Dame College, and I finished my HSC in 2026. I am on a gap year now, and most of it goes to physics.</p>
+        <p>I started teaching myself university physics in class 10, outside the national curriculum. About 2,500 hours later I have finished both volumes of Halliday, Resnick and Krane and solved almost every problem in the first. Mechanics is my strongest area.</p>
+        <p>I also write, teach and design for the projects above, and I help raise my twin siblings, who are nine years younger. There is more on the <a href="beyond.html">Beyond physics</a> page.</p>
+        <aside class="facts" aria-label="Quick facts">
+          <dl>
+            <div><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div>
+            <div><dt>Languages</dt><dd>Bangla (native), English (second language)</dd></div>
+            <div><dt>Test scores</dt><dd>SAT 1490 (Math 800, EBRW 690)<br>TOEFL iBT 92</dd></div>
+            <div><dt>Tools</dt><dd>LaTeX, TikZ, Adobe Illustrator</dd></div>
+          </dl>
+        </aside>
       </div>
-      <aside class="facts" aria-label="Quick facts">
-        <h3>At a glance</h3>
-        <dl>
-          <dt>Based in</dt><dd>Dhaka, Bangladesh</dd>
-          <dt>Languages</dt><dd>Bangla (native), English (professional working)</dd>
-          <dt>Test scores</dt><dd>SAT 1490 (Math 800, EBRW 690)<br>TOEFL iBT 92</dd>
-          <dt>Tools</dt><dd>LaTeX, TikZ</dd>
-        </dl>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================================
-     EXPERIENCE
-     ====================================================================== -->
-<section class="block" id="experience">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Experience</h2>
-    </div>
-    <ol class="timeline">
-      <li>
-        <p class="when">Mar 2026 &ndash; present</p>
-        <h3>Co-founder</h3>
-        <p class="org"><a target="_blank" rel="noopener" href="https://www.phasor.site/">PHASOR</a></p>
-      </li>
-      <li>
-        <p class="when">Jan 2026 &ndash; present</p>
-        <h3>Executive of Academics</h3>
-        <p class="org">Notre Dame Math Club</p>
-      </li>
-      <li>
-        <p class="when">Dec 2025 &ndash; present</p>
-        <h3>Co-editor, <i>The Set</i></h3>
-        <p class="org">Notre Dame Math Club (one of four student editors)</p>
-      </li>
-      <li>
-        <p class="when">Dec 2025 &ndash; Jan 2026</p>
-        <h3>Mechanics Instructor, Mastery Bootcamp for BdPhO 2026</h3>
-        <p class="org">Notre Dame Math Club</p>
-      </li>
-      <li>
-        <p class="when">Nov 2025</p>
-        <h3>Physics Problem Setter and Examiner</h3>
-        <p class="org">Innoverse Bangladesh 2025, BUET, Dhaka</p>
-      </li>
-      <li>
-        <p class="when">Feb 2025 &ndash; Jan 2026</p>
-        <h3>Member</h3>
-        <p class="org">Notre Dame Math Club</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ======================================================================
-     HONORS + EDUCATION
-     ====================================================================== -->
-<section class="block" id="honors">
-  <div class="wrap">
-    <div class="cols">
-
-      <div>
-        <h3>Honors &amp; awards</h3>
-        <ul class="rows">
-          <li><span class="yr">2025</span><div><div class="t">Asian Physics Olympiad, Honorable Mention</div><div class="d">Dhahran, Saudi Arabia. I scored 8.2/10 on the mechanics problem (precession of the equinoxes), the highest single-problem score on Bangladesh's team that year.</div></div></li>
-          <li><span class="yr">2026</span><div><div class="t">Asian Physics Olympiad, Bangladesh team</div><div class="d">Busan, South Korea.</div></div></li>
-          <li><span class="yr">2022<br>2023</span><div><div class="t">Bangladesh Junior Science Olympiad, Second Runner-Up</div><div class="d">National round, both years.</div></div></li>
-          <li><span class="yr">2024</span><div><div class="t">Queen's Commonwealth Essay Competition, Bronze</div></div></li>
-          <li><span class="yr">2024<br>2025</span><div><div class="t">Physics Brawl Online, top 150</div></div></li>
-        </ul>
+      <div class="photo-wrap portrait-wrap">
+        <img class="photo" src="jugantor_dey.jpg" alt="Portrait of Jugantor Dey" width="640" height="640" loading="lazy">
       </div>
-
-      <div>
-        <h3>Education</h3>
-        <ul class="rows">
-          <li><span class="yr">2024&ndash;26</span><div><div class="t">Notre Dame College</div><div class="d">Higher Secondary Certificate, Science. GPA 5.00/5.00. Ranked 168th of 2,130 students on the final college transcript.</div></div></li>
-          <li><span class="yr">2015&ndash;23</span><div><div class="t">Ideal School and College</div><div class="d">Secondary School Certificate, Science. GPA 5.00/5.00. 1st in class and 7th of about 1,000 boys in the class 10 final examination.</div></div></li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ======================================================================
-     CONTACT
-     ====================================================================== -->
 <section class="contact" id="contact">
   <div class="wrap">
     <div>
       <h2>Contact</h2>
-      <p>If you find an error in the handouts or want to ask me something, write to me.</p>
+      <p>Questions, corrections and ideas are welcome. Write to me.</p>
     </div>
     <div class="btn-row">
       <a class="btn" href="mailto:d.jugantor2007@gmail.com">d.jugantor2007@gmail.com</a>
@@ -222,15 +145,18 @@
   </div>
 </section>
 
+
 <footer>
   <div class="wrap">
     <p>Jugantor Dey</p>
-    <p>Last updated October 2026</p>
+    <p>Last updated 22 November 2026</p>
   </div>
 </footer>
 
 <script data-goatcounter="https://jugantordey.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script src="site.js" defer></script>
 
 </body>
 </html>
